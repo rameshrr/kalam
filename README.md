@@ -4,13 +4,13 @@ Utility library for node.js
 
 # Installation
 install via [NPM](https://www.npmjs.com/):
-> npm install utils
+> npm install kalam
 
 # Usage
 ### Initializing:
 ```javascript
 
-var utils = require('utils');
+var utils = require('kalam');
 
 ```
 

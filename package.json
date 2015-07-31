@@ -1,6 +1,6 @@
 {
-  "name": "utils",
-  "version": "0.0.1",
+  "name": "kalam",
+  "version": "0.0.2",
   "description": "Utility library for node.js",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,8 @@
   },
   "keywords": [
     "utils",
-    "node",
-    "utils",
-    "javascript",
-    "utils"
+    "node-utils",
+    "javascript-utils"
   ],
   "author": "Ramesh R <ramesh.myoffice@gmail.com> (https://github.com/rameshrr)",
   "license": "MIT",

@@ -12,6 +12,17 @@
 var utils = require('../'),
     assert = require('assert');
 
+/// Generating UID
 var uid = utils.getUid();
 utils.log(uid);
 assert.ok(uid != null, 'Uid generated');
+
+/// Hex to ASCII
+var ascii = utils.hexToString('0xD 0xA');
+utils.log(ascii);
+assert.ok(ascii != null, 'Converted to Hex');
+
+/// String to Hex
+var hex = utils.stringToHex('\r');
+utils.log(hex);
+assert.ok(hex != null, 'Converted to String');

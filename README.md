@@ -22,6 +22,22 @@ utils.log(uid);
 
 ```
 
+### hexToString(hexValue);
+```javascript
+
+var result = utils.hexToString('0xD');
+utils.log(result);
+
+```
+
+### stringToHex(strValue);
+```javascript
+
+var result = utils.stringToHex('\r');
+utils.log(result);
+
+```
+
 # Contributions
 Contributions are welcome
     

@@ -37,6 +37,34 @@ module.exports = {
         return Math.floor(Math.random() * 0x100000000);
     },
 
+    /// Hex
+
+    hexToString: function (hex) {
+
+        var arr = hex.split(' '),
+            str = '';
+
+        for (var i = 0; i < arr.length; i += 1) {
+            var c = String.fromCharCode(parseInt(arr[i], 16));
+            str += c;
+        }
+
+        return str;
+    },
+
+    stringToHex: function (tmp) {
+        var str = '',
+            i = 0,
+            tmp_len = tmp.length,
+            c;
+
+        for (; i < tmp_len; i += 1) {
+            c = tmp.charCodeAt(i);
+            str += c.toString(16) + ' ';
+        }
+        return str;
+    },
+
     /// json related
 
     formatJson: function (jsonData) {

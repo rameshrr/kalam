@@ -41,6 +41,10 @@ module.exports = {
 
     hexToString: function (hex) {
 
+        if(!hex) {
+            return '';
+        }
+
         var arr = hex.split(' '),
             str = '';
 
@@ -53,15 +57,18 @@ module.exports = {
     },
 
     stringToHex: function (tmp) {
-        var str = '',
-            i = 0,
-            tmp_len = tmp.length,
-            c;
 
-        for (; i < tmp_len; i += 1) {
-            c = tmp.charCodeAt(i);
+        if(!tmp) {
+            return '';
+        }
+
+        var str = '';
+
+        for (var i=0; i < tmp.length; i += 1) {
+            var c = tmp.charCodeAt(i);
             str += c.toString(16) + ' ';
         }
+
         return str;
     },
 
